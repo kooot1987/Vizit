@@ -1,0 +1,30 @@
+@media screen and (max-width: 978px) {                       
+    .hero {
+        padding-top: 30px;
+    }
+
+    .hero_container {
+        grid-row-gap: 20px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .hero_subtitle {
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .hero_discription {
+        font-size: 14px;
+    }
+    .hero_about {
+        text-align: center;
+    }
+    .hero_links {
+        justify-content: center;
+    }
+    .hero_box {
+        max-width: 350px;
+    }
+}
