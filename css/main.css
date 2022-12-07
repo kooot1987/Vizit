@@ -1,0 +1,119 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+img {
+    width: 100%;
+    height: 101%;
+}
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    padding: 15px 0;
+
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: gray;
+}
+.header_logo {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.hero_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-gap: 20px;
+}
+.hero_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero_title {
+    margin-bottom: 20px;
+    font-size: 48px;
+    line-height: 1.1;
+}
+.hero_subtitle {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.hero_links {
+    display: flex;
+}
+.hero_link {
+    margin-right: 10px;
+    font-size: 30px;
+    color:black;
+    transition: color 0.3s;
+}
+.hero_link:hover {
+    color: rgb(238, 11, 162);
+}
+.hero_box {
+    max-width: 500px;
+    justify-self: center;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    border: 10px solid #fff;
+    box-shadow: 2px 5px 10px
+    rgba(0, 0, 0, 0.5);
+    animation:  ava-animate 5s infinite alternate;
+}
+
+.hero_box_img {
+    animation: ava-bg 3s infinite alternate;
+}
+@keyframes ava-animate {
+    0% {
+        border-radius: 49% 51% 70% 30% / 30% 21% 79% 70% ;
+    }
+
+    40% {
+        border-radius: 79% 21% 88% 12% / 9% 69% 31% 91%  ;
+    }
+
+    60% {
+        border-radius: 86% 14% 63% 37% / 11% 69% 31% 89%  ;
+    }
+
+    100% {
+        border-radius: 79% 21% 88% 12% / 20% 36% 64% 80% ;
+    }
+}
+
+@keyframes ava-bg {
+    from {
+        backgrop-filter: hue-rotate();
+    }
+
+    to {
+        backgrop-filter: hue-rotate(90deg);
+    }
+}
